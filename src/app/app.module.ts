@@ -16,6 +16,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
 import { CourseService } from './services/course.service';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { CourseService } from './services/course.service';
     CurrentvideoComponent,
     CurrentsectionComponent,
     MainpageComponent,
-    VideosectionComponent
+    VideosectionComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
