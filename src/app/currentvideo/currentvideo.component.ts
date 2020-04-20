@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { Lecture } from '../shared/lecture';
 
 @Component({
   selector: 'app-currentvideo',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CurrentvideoComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  lecture: Lecture;
+  constructor(private sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
   }
+
+  getPptUrl(lecture){
+    return this.sanitizer.bypassSecurityTrustResourceUrl(lecture.pptlink);
+  }
+
 
 }

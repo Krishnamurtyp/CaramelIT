@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Input} from '@angular/core';
+import { Course } from '../shared/course';
+import { Lecture } from '../shared/lecture';
+
 
 @Component({
   selector: 'app-videosection',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideosectionComponent implements OnInit {
 
+  @Input()
+  course: Course;
+
+  selectedLecture: Lecture;
   constructor() { }
 
   ngOnInit(): void {
   }
+  onSelectLecture(lecture: Lecture){
+    console.log(lecture.name);
+    this.selectedLecture = lecture;
+  }
+
 
 }

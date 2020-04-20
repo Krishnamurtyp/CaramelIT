@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Course} from '../shared/course';
+import { CourseService } from '../services/course.service';
 
 @Component({
   selector: 'app-mainpage',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainpageComponent implements OnInit {
 
-  constructor() { }
+  courses: Course[];
+
+  selectedCourse: Course;
+
+  constructor(private courseService: CourseService) { }
 
   ngOnInit(): void {
+    this.courses = this.courseService.getCourse();
+  }
+
+  onSelect(course: Course){
+    this.selectedCourse = course;
   }
 
 }
