@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "caramelIT"
+    }
+  },
+  "defaultProject": "caramelIT",
+  "cli": {
+    "analytics": "fcf32566-735e-468a-8eea-c15ae77f91bc"
+  }
 }
