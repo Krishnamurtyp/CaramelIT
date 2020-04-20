@@ -7,6 +7,15 @@ import { CurrentvideoComponent } from './currentvideo/currentvideo.component';
 import { CurrentsectionComponent } from './currentsection/currentsection.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { VideosectionComponent } from './videosection/videosection.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import 'hammerjs';
+import { CourseService } from './services/course.service';
 
 @NgModule({
   declarations: [
@@ -18,9 +27,16 @@ import { VideosectionComponent } from './videosection/videosection.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    FlexLayoutModule,
+    MatListModule,
+    MatGridListModule,
+    MatButtonModule,
+    MatCardModule
   ],
-  providers: [],
+  providers: [CourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
