@@ -1,9 +1,12 @@
 <div *ngIf = "course">
     <div class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column"
     fxLayoutAlign.gt-md="space-around center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+
+    <div fxFlex="60" colHeight="100px" >   
+      <app-currentvideo [lecture] = "selectedLecture"></app-currentvideo>     
+    </div>
   
     
-  
     <div fxFlex="30" colHeight="100px">
       <div fxFlex fxLayout="column" class="heading">
         <div fxFlex>
@@ -21,11 +24,7 @@
         </div>
       </div>
     </div>
-    <div fxFlex="60" colHeight="100px" >
-      
-      <app-currentvideo [lecture] = "selectedLecture"></app-currentvideo>
-     
-    </div>
+    
     
   </div>
   

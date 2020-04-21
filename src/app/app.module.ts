@@ -18,6 +18,10 @@ import 'hammerjs';
 import { CourseService } from './services/course.service';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { MenuComponent } from './menu/menu.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { FooterComponent } from './footer/footer.component';
     MainpageComponent,
     VideosectionComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MenuComponent,
+    ContactComponent,
+    AboutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
