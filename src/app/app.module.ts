@@ -22,6 +22,8 @@ import { MenuComponent } from './menu/menu.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { MaterialModule } from './material/material.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -41,12 +43,9 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
     FlexLayoutModule,
-    MatListModule,
-    MatGridListModule,
-    MatButtonModule,
-    MatCardModule
+    MaterialModule,
+    FormsModule
   ],
   providers: [CourseService],
   bootstrap: [AppComponent]

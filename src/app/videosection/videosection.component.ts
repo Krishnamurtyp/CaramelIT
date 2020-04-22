@@ -10,6 +10,8 @@ import { Lecture } from '../shared/lecture';
 })
 export class VideosectionComponent implements OnInit {
 
+  opened = false;
+
   @Input()
   course: Course;
 

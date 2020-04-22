@@ -6,6 +6,19 @@
 }
 
 
-.heading {
-    margin-left: 18px;
+// .heading {
+//     margin-left: 18px;
+// }
+
+.mat-sidenav-container{
+    height: 100%;
+}
+
+.mat-sidenav, .mat-sidenav-content{
+    height: 100%;
+    padding: 16px;
+}
+.mat-sidenav{
+    background-color: darken($color: #008888, $amount: 0);
+    width : 300px;
 }
