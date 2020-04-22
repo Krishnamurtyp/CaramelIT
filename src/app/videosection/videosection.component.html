@@ -24,7 +24,7 @@
       </div>
     </div> -->
     <mat-sidenav-container>
-      <mat-sidenav #sidenav [(opened)]="opened" mode="side">
+      <mat-sidenav #sidenav [(opened)]="opened" mode="side" position="end">
         <div fxLayout="column">
           <div fxFlex>
             <h4>{{course.name}}</h4>
@@ -42,7 +42,7 @@
           </div>
         </div>
       </mat-sidenav>
-      <mat-sidenav-content><i class="fa fa-bars fa-ga" (click)="sidenav.toggle()"></i>Main
+      <mat-sidenav-content position="end"><i class="fa fa-bars fa-ga" (click)="sidenav.toggle()"></i>Main
         <div fxFlex="100" colHeight="100px">
           <app-currentvideo [lecture]="selectedLecture"></app-currentvideo>
         </div>
